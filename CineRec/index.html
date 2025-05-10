@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineRec - Smart Movie Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>CineRec 🎬</h1>
+    <p>Tell us how you're feeling and we'll suggest a movie!</p>
+
+    <form id="quiz-form">
+      <label>What vibe are you going for?</label>
+      <select id="mood">
+        <option value="light">Light & Funny</option>
+        <option value="serious">Serious & Emotional</option>
+        <option value="action">Action-Packed</option>
+        <option value="classic">Classic Vibes</option>
+      </select>
+
+      <label>Preferred release decade?</label>
+      <select id="decade">
+        <option value="2020s">2020s</option>
+        <option value="2010s">2010s</option>
+        <option value="2000s">2000s</option>
+        <option value="1990s">1990s</option>
+      </select>
+
+      <button type="submit">Recommend a Movie</button>
+    </form>
+
+    <div id="recommendation" class="hidden">
+      <h2>Recommended Movie</h2>
+      <div id="movie-card"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
